@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <!–– 画面の拡大を許可しない-->
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <!–– スタイルシート、OnsenUIの読み込み-->
+  <script src="components/loader.js"></script>
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+  
+  <script>
+    ons.bootstrap(); // OnsenUIコンポーネントの読み込み
+    ons.disableAutoStatusBarFill();  // (Monaca enables StatusBar plugin by default)
+  </script>
+  
+  
+</head>
+<body>
+
+  <!–– varはJavaScriptからこのコンポーネントを参照するための名前-->
+  <ons-navigator title="Navigator" var="myNavigator" page="page1.html"> 
+  NAVIGATOR
+  <iframe width="100%" height="520" frameborder="0" src="https://kawase-y.carto.com/builder/b4760825-f5e2-413d-915b-8bb938946b18/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+  </ons-navigator>
+  
+</body>
+</html>
